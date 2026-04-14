@@ -1,53 +1,58 @@
-# 🌐 Flask Basic Project
+# First Flask App — AWS EC2 Deployment
 
-## 📌 Project Overview
-
-This is my first Flask web application.
-I created this project to understand the basics of building and running a web application using Python.
+My first cloud deployment. A simple Python Flask app running on AWS EC2 — this is where I learned how to launch a server, connect to it, and get a web app running on the internet for the first time.
 
 ---
 
-## 🚀 Features
+## What this project does
 
-* Simple Flask application
-* Runs a basic web server
-* Displays output on the browser
+A basic Flask web server that displays output in the browser. Simple app — but the real learning was the infrastructure around it.
 
 ---
 
-## 🛠️ Technologies Used
+## What I set up
 
-* Python 3
-* Flask
-
----
-
-## ⚙️ How to Run
-
-Install Flask:
-pip3 install flask
-
-Run the application:
-python3 app.py
+- Launched an AWS EC2 instance (Ubuntu Linux)
+- Connected to the server via EC2 terminal
+- Installed Python and Flask on the server
+- Ran the Flask app directly on EC2
+- Accessed the output from a browser using the EC2 public IP
 
 ---
 
-## 🌐 Access
+## What I learned
 
-http://your-public-ip:5000
-
----
-
-## 📁 Project Structure
-
-app.py
+This was my first time working with a real cloud server. Key things I understood here:
+- How EC2 instances work (launch, connect, configure)
+- How to run a Python app on a remote Linux server
+- How a browser connects to a server using an IP address
+- The difference between running code locally vs on a cloud server
 
 ---
 
-## 💡 What I Learned
+## How this project led to the next one
 
-* Basics of Flask
-* Running a web server using Python
-* Deploying application on AWS EC2
+After this, I built a multi-page Flask app with HTML templates and CSS. Then I went further — deploying with Nginx, Gunicorn, SSL, and PEM key authentication in my 3rd project.
 
 ---
+
+## Why it's not live
+
+Deployed and tested successfully. EC2 instance stopped to avoid AWS charges.
+
+---
+
+## Stack
+
+Python · Flask · AWS EC2 · Ubuntu Linux
+
+---
+
+## Run locally
+
+```bash
+git clone https://github.com/Kishore-infra/first-cloud-project.git
+cd first-cloud-project
+pip install flask
+python app.py
+```
